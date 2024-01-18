@@ -1,11 +1,10 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using MinimalAPI.Domain.Entities;
 
 namespace MinimalAPI.Infrastructure;
 
 public class ApplicationDbContext
-    (DbContextOptions<ApplicationDbContext> options) : IdentityDbContext
+    (DbContextOptions<ApplicationDbContext> options) : DbContext
 {
     public DbSet<Book> Books { get; set; } = null!;
     public DbSet<Author> Authors { get; set; } = null!;
@@ -15,6 +14,6 @@ public class ApplicationDbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=.;Database=BookShop;Trusted_Connection=True;MultipleActiveResultSets=true");
+            "Server=.;Database=BookShop;Trusted_Connection=True;MultipleActiveResultSets=true", b => b.MigrationsAssembly("MinimalAPI.Web"));
     }
 }
