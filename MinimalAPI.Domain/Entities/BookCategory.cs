@@ -1,6 +1,6 @@
 ﻿namespace MinimalAPI.Domain.Entities;
 
-public class BooksCategory
+public class BookCategory
 {
     public int Id { get; set; }
     public int BookId { get; set; }
