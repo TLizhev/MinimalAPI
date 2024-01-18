@@ -1,6 +1,6 @@
-﻿using MinimalAPI.Models;
+﻿using MinimalAPI.Web.Models;
 
-namespace MinimalAPI.Endpoints;
+namespace MinimalAPI.Web.Endpoints;
 
 public static class WeatherEndpoints
 {

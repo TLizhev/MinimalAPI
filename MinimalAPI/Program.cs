@@ -1,4 +1,4 @@
-using MinimalAPI.Endpoints;
+using MinimalAPI.Web.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 

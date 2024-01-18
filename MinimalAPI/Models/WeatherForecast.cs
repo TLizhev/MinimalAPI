@@ -1,4 +1,4 @@
-﻿namespace MinimalAPI.Models;
+﻿namespace MinimalAPI.Web.Models;
 
 public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
