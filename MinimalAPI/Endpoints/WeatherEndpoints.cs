@@ -1,10 +1,10 @@
-﻿using MinimalAPI.Web.Models;
+﻿using MinimalAPI.Domain.Entities;
 
 namespace MinimalAPI.Web.Endpoints;
 
-public static class WeatherEndpoints
+public class WeatherEndpoints : IModule
 {
-    public static void AddWeatherEndpoints(this IEndpointRouteBuilder app)
+    public void RegisterEndpoints(IEndpointRouteBuilder app)
     {
         var summaries = new[]
         {
@@ -26,4 +26,9 @@ public static class WeatherEndpoints
             .WithName("GetWeatherForecast")
             .WithOpenApi();
     }
+}
+
+public interface IModule
+{
+    void RegisterEndpoints(IEndpointRouteBuilder app);
 }

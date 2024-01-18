@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.Infrastructure",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.Presentation", "MinimalAPI.Presentation\MinimalAPI.Presentation.csproj", "{2D8444E3-CAE1-4F2C-8C63-216A60AB5A18}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AB996D45-283F-4BC5-8DEB-263B96066BE8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AB996D45-283F-4BC5-8DEB-263B96066BE8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPIUnitTests", "MinimalAPIUnitTests\MinimalAPIUnitTests.csproj", "{FA7E1159-0A89-49F4-A317-6EE9960AE45A}"
 EndProject

@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MinimalAPI.Application\MinimalAPI.Application.csproj" />
+  </ItemGroup>
+
 </Project>
