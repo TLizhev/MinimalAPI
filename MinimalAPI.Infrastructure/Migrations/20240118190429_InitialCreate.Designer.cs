@@ -9,7 +9,7 @@ using MinimalAPI.Infrastructure;
 
 #nullable disable
 
-namespace MinimalAPI.Web.Migrations
+namespace MinimalAPI.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20240118190429_InitialCreate")]
