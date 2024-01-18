@@ -1,10 +1,11 @@
-﻿using MinimalAPI.Domain.Entities;
+﻿using Carter;
+using MinimalAPI.Domain.Entities;
 
 namespace MinimalAPI.Web.Endpoints;
 
-public class WeatherEndpoints : IModule
+public class WeatherEndpoints : ICarterModule
 {
-    public void RegisterEndpoints(IEndpointRouteBuilder app)
+    public void AddRoutes(IEndpointRouteBuilder app)
     {
         var summaries = new[]
         {
@@ -26,9 +27,4 @@ public class WeatherEndpoints : IModule
             .WithName("GetWeatherForecast")
             .WithOpenApi();
     }
-}
-
-public interface IModule
-{
-    void RegisterEndpoints(IEndpointRouteBuilder app);
 }
